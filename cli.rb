@@ -5,20 +5,20 @@
 class Cli < Formula
   desc "The CLI for Humanitec, humctl."
   homepage "https://developer.humanitec.com/platform-orchestrator/cli/"
-  version "0.13.7"
+  version "0.14.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/humanitec/cli/releases/download/v0.13.7/cli_0.13.7_darwin_arm64.tar.gz"
-      sha256 "1d25b5e7019e22adf541391bde60559429e8f8a7bc16bfcdb339b6ce587ccae0"
+      url "https://github.com/humanitec/cli/releases/download/v0.14.0/cli_0.14.0_darwin_arm64.tar.gz"
+      sha256 "5ee993c51589cd0a0e16317a70685816f0e8d1cdda387f8f80fe152091ffa45e"
 
       def install
         bin.install "humctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/humanitec/cli/releases/download/v0.13.7/cli_0.13.7_darwin_amd64.tar.gz"
-      sha256 "672e7580240f0582a28b28b939bfcd3861b63a5fc8909cc57c4adb460f785f6f"
+      url "https://github.com/humanitec/cli/releases/download/v0.14.0/cli_0.14.0_darwin_amd64.tar.gz"
+      sha256 "38a2514693190d5d10389b126e1186427115c12ba7d8ae4bc770b1ec11f3908b"
 
       def install
         bin.install "humctl"
@@ -28,16 +28,16 @@ class Cli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/humanitec/cli/releases/download/v0.13.7/cli_0.13.7_linux_amd64.tar.gz"
-      sha256 "0232fa91d33d944c2426ecc8ac9fb5ea3f0632c74a73b539311c570315095a2c"
+      url "https://github.com/humanitec/cli/releases/download/v0.14.0/cli_0.14.0_linux_amd64.tar.gz"
+      sha256 "fa8938342806b43908f73dfcb2a270faf05ea72a66328b554f9ff5d8222ef2bf"
 
       def install
         bin.install "humctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/humanitec/cli/releases/download/v0.13.7/cli_0.13.7_linux_arm64.tar.gz"
-      sha256 "7ace9c77a29fd5268ac1f0c868a81400adfa5db1e4cb051e8b2c51b15858e523"
+      url "https://github.com/humanitec/cli/releases/download/v0.14.0/cli_0.14.0_linux_arm64.tar.gz"
+      sha256 "9a6d521bb8304a8c45cb1fd1ea7653af66a1681318dba5167179de1382eb53f6"
 
       def install
         bin.install "humctl"
