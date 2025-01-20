@@ -5,12 +5,12 @@
 class Cli < Formula
   desc "The CLI for Humanitec, humctl."
   homepage "https://developer.humanitec.com/platform-orchestrator/cli/"
-  version "0.36.1"
+  version "0.36.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/humanitec/cli/releases/download/v0.36.1/cli_0.36.1_darwin_amd64.tar.gz"
-      sha256 "915f6cef895b9b6ce0749ec1c829f38d683e4e3ca2bf752bded0b3064f184639"
+      url "https://github.com/humanitec/cli/releases/download/v0.36.2/cli_0.36.2_darwin_amd64.tar.gz"
+      sha256 "69f365ca4a01ee069457914dcd1882e142ddc5e7e9c915ffb0a9411da7aa0492"
 
       def install
         bin.install "humctl"
@@ -18,8 +18,8 @@ class Cli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/humanitec/cli/releases/download/v0.36.1/cli_0.36.1_darwin_arm64.tar.gz"
-      sha256 "b5efdc50730bf79405bc850ed40268fcfbe2fffec8f808ad1536848fb7951747"
+      url "https://github.com/humanitec/cli/releases/download/v0.36.2/cli_0.36.2_darwin_arm64.tar.gz"
+      sha256 "438704f98d776987984503b7726a20ae0d8a0e5756b2c212fde22158f3730a3b"
 
       def install
         bin.install "humctl"
@@ -31,8 +31,8 @@ class Cli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/humanitec/cli/releases/download/v0.36.1/cli_0.36.1_linux_amd64.tar.gz"
-        sha256 "092979de1b3ecb390c68bd7ba48c94102521f4d65a6cefc0da777da300151db6"
+        url "https://github.com/humanitec/cli/releases/download/v0.36.2/cli_0.36.2_linux_amd64.tar.gz"
+        sha256 "a841f2321fe7954cf0ab2861f2bbfcec0c95b6311c61527e0c998766d0c8cf15"
 
         def install
           bin.install "humctl"
@@ -42,8 +42,8 @@ class Cli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/humanitec/cli/releases/download/v0.36.1/cli_0.36.1_linux_arm64.tar.gz"
-        sha256 "61b3edff1e9b64f6fb3e8a6bd5d59a185c9cd223444e007b4cdde914a225ace1"
+        url "https://github.com/humanitec/cli/releases/download/v0.36.2/cli_0.36.2_linux_arm64.tar.gz"
+        sha256 "3bdc11468af85be8cdc18c8a67c7d2ac2dabb73bf2a8da181c00d19c790dd71f"
 
         def install
           bin.install "humctl"
