@@ -5,44 +5,40 @@
 class Hctl < Formula
   desc "The CLI for Humanitec Platform Orchestrator, hctl."
   homepage "https://developer.humanitec.com/platform-orchestrator/docs/integrations/cli"
-  version "1.34.1"
+  version "1.34.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/humanitec/hctl/releases/download/v1.34.1/hctl_1.34.1_darwin_amd64.tar.gz"
-      sha256 "0401e5047a4a7e6da0e96d3de61f891426eae10c9de67a52502c710178b5796b"
+      url "https://github.com/humanitec/hctl/releases/download/v1.34.2/hctl_1.34.2_darwin_amd64.tar.gz"
+      sha256 "f129b3556eb22efdaa9676636ef3f6e9ff83e61eacc633847f3cb7362be2d0d8"
 
       def install
         bin.install "hctl"
-        generate_completions_from_executable(bin/"hctl", "completion")
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/humanitec/hctl/releases/download/v1.34.1/hctl_1.34.1_darwin_arm64.tar.gz"
-      sha256 "7b6b015ce7466cf8db6fc17ba3159594a4ac080337590016cf6dcebaca8f86ef"
+      url "https://github.com/humanitec/hctl/releases/download/v1.34.2/hctl_1.34.2_darwin_arm64.tar.gz"
+      sha256 "8382cf85b14cc1fc349d8d25bd8ca17e9aba0815f2407772854ef4851b116730"
 
       def install
         bin.install "hctl"
-        generate_completions_from_executable(bin/"hctl", "completion")
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/humanitec/hctl/releases/download/v1.34.1/hctl_1.34.1_linux_amd64.tar.gz"
-      sha256 "9bc6c292ab73c90cf7a9ae3ff5c32bfb60962dc1482ae71c7a44490ff65b8386"
+      url "https://github.com/humanitec/hctl/releases/download/v1.34.2/hctl_1.34.2_linux_amd64.tar.gz"
+      sha256 "028c257197d3dedff3ab043a75612bafc24a3d9bba35f829073549dbb7d1c61b"
       def install
         bin.install "hctl"
-        generate_completions_from_executable(bin/"hctl", "completion")
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/humanitec/hctl/releases/download/v1.34.1/hctl_1.34.1_linux_arm64.tar.gz"
-      sha256 "6c7353c17d85590995aceb075c2a3af466b37d7753bf2f03260eeebcbe71c6e4"
+      url "https://github.com/humanitec/hctl/releases/download/v1.34.2/hctl_1.34.2_linux_arm64.tar.gz"
+      sha256 "0a54090159f2a732ff2a782f803a64c553610f7c02be69d2858de63facd77dfa"
       def install
         bin.install "hctl"
-        generate_completions_from_executable(bin/"hctl", "completion")
       end
     end
   end
