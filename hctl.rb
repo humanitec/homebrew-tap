@@ -5,20 +5,20 @@
 class Hctl < Formula
   desc "The CLI for Humanitec Platform Orchestrator, hctl."
   homepage "https://developer.humanitec.com/platform-orchestrator/docs/integrations/cli"
-  version "1.36.0"
+  version "1.36.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/humanitec/hctl/releases/download/v1.36.0/hctl_1.36.0_darwin_amd64.tar.gz"
-      sha256 "6f79e52eaa6661d51e3d12cfe6e1e9392d9af95e0187f684b4327b1a80411a00"
+      url "https://github.com/humanitec/hctl/releases/download/v1.36.1/hctl_1.36.1_darwin_amd64.tar.gz"
+      sha256 "e1974aff8c0248cbad119d5e5c9d64249c71a2801f0ba297204eb5d2883d1a91"
 
       def install
         bin.install "hctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/humanitec/hctl/releases/download/v1.36.0/hctl_1.36.0_darwin_arm64.tar.gz"
-      sha256 "bdc4bc93e1349661aa7c2d0208818e93784c201ea4a2a2101a0f82e7213f5b8a"
+      url "https://github.com/humanitec/hctl/releases/download/v1.36.1/hctl_1.36.1_darwin_arm64.tar.gz"
+      sha256 "7e74d5b06de58948a4d378ff1dd98cfe6421a3d5da4bab2400ad3f51c28c19fe"
 
       def install
         bin.install "hctl"
@@ -28,15 +28,15 @@ class Hctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/humanitec/hctl/releases/download/v1.36.0/hctl_1.36.0_linux_amd64.tar.gz"
-      sha256 "75c693b42b9a49ad2c90058c3aebbfeb4cec3a209a6cbb164c9da3e163399416"
+      url "https://github.com/humanitec/hctl/releases/download/v1.36.1/hctl_1.36.1_linux_amd64.tar.gz"
+      sha256 "04a616e37c594cfedf4705eca8a4ef820670afe1fce76d51a72395635477aca3"
       def install
         bin.install "hctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/humanitec/hctl/releases/download/v1.36.0/hctl_1.36.0_linux_arm64.tar.gz"
-      sha256 "55ada87876aac6c036a2ae1d197d863b656f471b06ccd04d6af9a4828cdae385"
+      url "https://github.com/humanitec/hctl/releases/download/v1.36.1/hctl_1.36.1_linux_arm64.tar.gz"
+      sha256 "1d97bb8fca96642a83e4511b59155f76b7722948c708c203d188c69130e5fd40"
       def install
         bin.install "hctl"
       end
