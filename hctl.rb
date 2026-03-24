@@ -5,20 +5,20 @@
 class Hctl < Formula
   desc "The CLI for Humanitec Platform Orchestrator, hctl."
   homepage "https://developer.humanitec.com/platform-orchestrator/docs/integrations/cli"
-  version "1.48.1"
+  version "1.49.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/humanitec/hctl/releases/download/v1.48.1/hctl_1.48.1_darwin_amd64.tar.gz"
-      sha256 "d0191a36d6c0a9a8125950687b39fdba98d0acad8454266380d2d8d1c6bcd647"
+      url "https://github.com/humanitec/hctl/releases/download/v1.49.0/hctl_1.49.0_darwin_amd64.tar.gz"
+      sha256 "7c09a07b038cdd3584eaa805a216579d0cc334440f913f5c6f752944f9a01602"
 
       define_method(:install) do
         bin.install "hctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/humanitec/hctl/releases/download/v1.48.1/hctl_1.48.1_darwin_arm64.tar.gz"
-      sha256 "49578b86efd773ca92a96ddd5aa4373baf618537c4c5ee42eef0b8700586aa68"
+      url "https://github.com/humanitec/hctl/releases/download/v1.49.0/hctl_1.49.0_darwin_arm64.tar.gz"
+      sha256 "25f708daf5e0ecc0eab84b1eba76ef1a79a5b67149b0dd1f991cade6ab137d69"
 
       define_method(:install) do
         bin.install "hctl"
@@ -28,15 +28,15 @@ class Hctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/humanitec/hctl/releases/download/v1.48.1/hctl_1.48.1_linux_amd64.tar.gz"
-      sha256 "4e4428841b282a81e216e408810256f7edee7106507cfc66fc6f86ba0205347f"
+      url "https://github.com/humanitec/hctl/releases/download/v1.49.0/hctl_1.49.0_linux_amd64.tar.gz"
+      sha256 "ff0fa30b92b4d74bf9a2a755bb0b49edbd96a819ccfffc2061826747d35d5452"
       define_method(:install) do
         bin.install "hctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/humanitec/hctl/releases/download/v1.48.1/hctl_1.48.1_linux_arm64.tar.gz"
-      sha256 "5a245374773cab72ee6424e4954167e50b14484b70215fdabc71d69b2f073078"
+      url "https://github.com/humanitec/hctl/releases/download/v1.49.0/hctl_1.49.0_linux_arm64.tar.gz"
+      sha256 "3ec397c713549ac72627c0d92d32cacaf31d6ed1c4903c2f9284921ef736369b"
       define_method(:install) do
         bin.install "hctl"
       end
